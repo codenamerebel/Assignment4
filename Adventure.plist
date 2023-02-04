@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Prompt</key>
-	<string></string>
+	<string>Welcome to the real world</string>
 	<key>Choice 1</key>
 	<dict>
 		<key>Prompt</key>
-		<string></string>
+		<string>You chose Choice 1</string>
 		<key>Choice 1</key>
 		<dict>
 			<key>Prompt</key>
@@ -42,7 +42,7 @@
 	<key>Choice 2</key>
 	<dict>
 		<key>Prompt</key>
-		<string></string>
+		<string>You chose Choice 2</string>
 		<key>Choice 1</key>
 		<dict>
 			<key>Prompt</key>

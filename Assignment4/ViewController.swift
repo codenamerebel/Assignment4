@@ -14,19 +14,51 @@ class ViewController: UIViewController {
     @IBOutlet var Choice1Button:UIButton!;
     @IBOutlet var Choice2Button:UIButton!;
     
-    override func viewDidLoad() {
+    var storyController:StoryDataHandler = StoryDataHandler();
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+       // print(storyController.completeStory.description)
         
-        var test = StoryDataHandler();
+        let startScreen = self.storyController.startStory();
+        
+
         
         
-        print(test.completeStory.description)
+        //  Configure the gui with opening information
+        PromptLabel.text = startScreen.Prompt;
+        Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
+        Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
+        
+        
+        print(Choice1Button.title(for: UIControl.State.normal)!);
+        
         
         
     }
 
+    @IBAction func advanceTheStoryFrom(_sender: UIButton)
+    {
+        
+        print("Advance Story");
+        
+        
+        
+        let storyUpdates = self.storyController.advanceStory(choiceKey:_sender.title(for: UIControl.State.normal)!)
+        
+        //  Configure the gui with opening information
+        self.PromptLabel.text = storyUpdates.Prompt;
+        self.Choice1Button.setTitle(storyUpdates.Choice1, for:UIControl.State.normal);
+        self.Choice2Button.setTitle(storyUpdates.Choice2, for:UIControl.State.normal);
+        
+        
+        
+    }
+    
 
 }
 

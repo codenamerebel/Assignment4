@@ -24,45 +24,35 @@ class   StoryDataHandler
         //  This will be where we currently are in the story with the optoins
         //  It should start out equal to the completeStory
         self.currentStory = NSDictionary(dictionary: self.completeStory);
-        
-        
-        //print(self.currentStory.description);
-        startStory()
+    }
 
-        advanceStory(choiceKey: "Choice 1");
-        advanceStory(choiceKey: "Choice 1");
-        
-        
-      //  super.init();
-    }
-    
-    /*
-    func advanceStory(choiceKey:String) -> NSDictionary
-    {
-        
-        return ["test":"Testing"] as NSDictionary
-    }
-    */
-    
-    func advanceStory(choiceKey:String) -> (Prompt: String, Choice1: String, Choice2: String)
-    {
-        self.currentStory = self.currentStory[choiceKey] as! NSDictionary;
-        
-        print(self.currentStory.description);
-            
-        return ("Prompt", "Choice 1", "Choice 2");
-    }
-    
     
     func startStory() -> (Prompt: String, Choice1: String, Choice2: String)
     {
         var storyOptionsArray:Array = self.currentStory.allKeys;
         
-        
-        storyOptionsArray.removeAll(where: { $0 as! String == "Choice 1" })
-        
+        storyOptionsArray.removeAll(where: { $0 as! String == "Prompt" })
+            
+        print(storyOptionsArray.description);
+            
         return(self.currentStory["Prompt"] as! String, storyOptionsArray[0] as! String, storyOptionsArray[1] as! String)
     }
+        
+        
+    
+    func advanceStory(choiceKey:String) -> (Prompt: String, Choice1: String, Choice2: String)
+    {
+        //  Let's advance the story and change our options
+        self.currentStory = self.currentStory[choiceKey] as! NSDictionary;
+        
+        
+        print(self.currentStory.description);
+            
+        return self.startStory();
+    }
+    
+    
+
     
     
 }
