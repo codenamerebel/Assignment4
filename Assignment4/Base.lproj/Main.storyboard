@@ -53,6 +53,11 @@
                             <constraint firstItem="z0l-i1-MAR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="ewK-PS-bWP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Choice1Button" destination="fYK-Cn-qdY" id="04o-zz-x2N"/>
+                        <outlet property="Choice2Button" destination="DRc-YM-DNZ" id="43F-yf-8Lf"/>
+                        <outlet property="PromptLabel" destination="lO2-Au-mfd" id="EZ9-Yp-nHE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
