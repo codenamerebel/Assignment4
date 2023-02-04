@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2319642298CA667001AA076 /* Adventure.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2319641298CA667001AA076 /* Adventure.plist */; };
+		A2896B27298E141100C6E28D /* StoryDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2896B26298E141100C6E28D /* StoryDataHandler.swift */; };
 		A2D8F842298B63D900462525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D8F841298B63D900462525 /* AppDelegate.swift */; };
 		A2D8F844298B63D900462525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D8F843298B63D900462525 /* SceneDelegate.swift */; };
 		A2D8F846298B63D900462525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D8F845298B63D900462525 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A2319641298CA667001AA076 /* Adventure.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Adventure.plist; sourceTree = "<group>"; };
+		A2896B26298E141100C6E28D /* StoryDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataHandler.swift; sourceTree = "<group>"; };
 		A2D8F83E298B63D900462525 /* Assignment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D8F841298B63D900462525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D8F843298B63D900462525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A2D8F84A298B63DC00462525 /* Assets.xcassets */,
 				A2D8F84C298B63DC00462525 /* LaunchScreen.storyboard */,
 				A2D8F84F298B63DC00462525 /* Info.plist */,
+				A2896B26298E141100C6E28D /* StoryDataHandler.swift */,
 			);
 			path = Assignment4;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				A2D8F846298B63D900462525 /* ViewController.swift in Sources */,
 				A2D8F842298B63D900462525 /* AppDelegate.swift in Sources */,
+				A2896B27298E141100C6E28D /* StoryDataHandler.swift in Sources */,
 				A2D8F844298B63D900462525 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
