@@ -34,13 +34,16 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                                 <connections>
-                                                    <action selector="advanceTheStoryFrom_sender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="CCY-nN-UTD"/>
+                                                    <action selector="advanceTheStoryFrom_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtr-fX-cZu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-YM-DNZ" userLabel="Choice2Button">
                                                 <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="374.33333333333331"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="advanceTheStoryFrom_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hlh-eJ-O4r"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

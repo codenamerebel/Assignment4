@@ -44,12 +44,9 @@ class ViewController: UIViewController {
     @IBAction func advanceTheStoryFrom(_sender: UIButton)
     {
         
-        print("Advance Story");
-        
-        
-        
         let storyUpdates = self.storyController.advanceStory(choiceKey:_sender.title(for: UIControl.State.normal)!)
         
+        print(storyUpdates)
         //  Configure the gui with opening information
         self.PromptLabel.text = storyUpdates.Prompt;
         self.Choice1Button.setTitle(storyUpdates.Choice1, for:UIControl.State.normal);
