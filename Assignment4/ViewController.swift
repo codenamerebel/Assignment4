@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         
         let startScreen = self.storyController.startStory();
         
+        
+        //  Set up GUI
 
         
         
@@ -47,11 +49,22 @@ class ViewController: UIViewController {
         let storyUpdates = self.storyController.advanceStory(choiceKey:_sender.title(for: UIControl.State.normal)!)
         
         print(storyUpdates)
-        //  Configure the gui with opening information
-        self.PromptLabel.text = storyUpdates.Prompt;
-        self.Choice1Button.setTitle(storyUpdates.Choice1, for:UIControl.State.normal);
-        self.Choice2Button.setTitle(storyUpdates.Choice2, for:UIControl.State.normal);
         
+        if(storyUpdates.Choice1 == nil && storyUpdates.Choice2 == nil)
+        {
+            //  Configure the gui with opening information
+            self.PromptLabel.text = storyUpdates.Prompt;
+
+            //  Configure GUI here
+        }
+        
+        else
+        {
+            //  Configure the gui with opening information
+            self.PromptLabel.text = storyUpdates.Prompt;
+            self.Choice1Button.setTitle(storyUpdates.Choice1, for:UIControl.State.normal);
+            self.Choice2Button.setTitle(storyUpdates.Choice2, for:UIControl.State.normal);
+        }
         
         
     }
