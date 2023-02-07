@@ -34,7 +34,7 @@ class   StoryDataHandler
         self.completeStory = NSDictionary(contentsOfFile:AdventurePath)!;
         
         
-        //  This will be where we currently are in the story with the optoins
+        //  This will be where we currently are in the story with the options
         //  It should start out equal to the completeStory
         self.currentStory = NSDictionary(dictionary: self.completeStory);
     }
@@ -66,9 +66,13 @@ class   StoryDataHandler
             return (self.currentStory["End"] as! String, nil, nil)
         }
         
-        
-        
     }
     
+    func    resetStory()
+    {
+        //  This will be where we currently are in the story with the options
+        //  It should start out equal to the completeStory
+        self.currentStory = NSDictionary(dictionary: self.completeStory);
+    }
     
 }

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var PromptLabel:UILabel!;
     @IBOutlet var Choice1Button:UIButton!;
     @IBOutlet var Choice2Button:UIButton!;
+    @IBOutlet var ResetStoryButton:UIButton!;
     
     var storyController:StoryDataHandler = StoryDataHandler();
     
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
         
         
         //  Set up GUI
-
+        self.setViewStoryMode();
         
         
         //  Configure the gui with opening information
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
             //  Configure the gui with opening information
             self.PromptLabel.text = storyUpdates.Prompt;
 
-            //  Configure GUI here
+            self.setViewResetMode();
         }
         
         else
@@ -70,5 +71,35 @@ class ViewController: UIViewController {
     }
     
 
+    func    setViewResetMode()
+    {
+        self.Choice1Button.isHidden = true;
+        self.Choice2Button.isHidden = true;
+        self.ResetStoryButton.isHidden = false;
+    }
+    
+    func    setViewStoryMode()
+    {
+        self.Choice1Button.isHidden = false;
+        self.Choice2Button.isHidden = false;
+        self.ResetStoryButton.isHidden = true;
+    }
+    
+    @IBAction func    restartStory()
+    {
+        self.setViewStoryMode();
+        
+        self.storyController.resetStory();
+        
+        let startScreen = self.storyController.startStory();
+        
+        //  Configure the gui with opening information
+        PromptLabel.text = startScreen.Prompt;
+        Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
+        Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
+        
+    }
+    
+    
 }
 
