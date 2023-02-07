@@ -3,74 +3,74 @@
 <plist version="1.0">
 <dict>
 	<key>Prompt</key>
-	<string>Welcome to the real world</string>
-	<key>Choice 1</key>
+	<string>We are going to Disney World. Which park do we go to first?</string>
+	<key>Magic Kingdom</key>
 	<dict>
 		<key>Prompt</key>
-		<string>You chose Choice 1</string>
-		<key>Choice 1</key>
+		<string>We arrive at Magic Kingdom and walk down Main Street. Which land do we go to first? </string>
+		<key>Tomorrowland</key>
 		<dict>
 			<key>Prompt</key>
-			<string>You chose 1</string>
-			<key>Choice 1</key>
+			<string>We go right and make it inside of Tomorrowland. Which ride do we ride?</string>
+			<key>Space Mountain</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I love roller coasters. I am so glad I started the day with one!</string>
 			</dict>
-			<key>Choice 2</key>
+			<key>PeopleMover</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I enjoyed getting to ride around and watch everyone roam around Tomorrowland while I enjoy the breeze and relax!</string>
 			</dict>
 		</dict>
-		<key>Choice 2</key>
+		<key>Fantasyland</key>
 		<dict>
 			<key>Prompt</key>
-			<string>You chose 2</string>
-			<key>Choice 1</key>
+			<string>We continue straight and walk through Cinderella’s Castle. We are now in Fantasyland. What ride do we ride first?</string>
+			<key>it’s a small world</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I am so glad I started our trip with such a classic ride like it’s a small world!</string>
 			</dict>
-			<key>Choice 2</key>
+			<key>Peter Pan’s Flight</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I know the wait times can get so long for Peter Pan’s Flight as the day goes on, so I am glad we knocked it out first! </string>
 			</dict>
 		</dict>
 	</dict>
-	<key>Choice 2</key>
+	<key>EPCOT</key>
 	<dict>
 		<key>Prompt</key>
-		<string>You chose Choice 2</string>
-		<key>Choice 1</key>
+		<string>We arrive at Epcot and are greeted with Spaceship Earth. Where do we head first?</string>
+		<key>World Showcase</key>
 		<dict>
 			<key>Prompt</key>
-			<string>you chose 1</string>
-			<key>Choice 1</key>
+			<string>I am starving and cannot wait to indulge in food around the World Showcase. Where do I want to eat lunch today?</string>
+			<key>Chefs de France</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I love beef tenderloin and ending my meal with a sweet dessert. Chefs de France was perfect. </string>
 			</dict>
-			<key>Choice 2</key>
+			<key>Via Napoli</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>I am so glad we had pizza at Vis Napoli. It was thin and perfectly crisp. And not too heavy for a day of rides!</string>
 			</dict>
 		</dict>
-		<key>Choice 2</key>
+		<key>The Land Pavilion</key>
 		<dict>
 			<key>Prompt</key>
-			<string>you chose 2</string>
-			<key>Choice 1</key>
+			<string>We made it to The Land. What ride are we doing first? </string>
+			<key>Living with the Land</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>Living with the Land is so peaceful and relaxing. I am glad we started our day here.</string>
 			</dict>
-			<key>Choice 2</key>
+			<key>Soarin</key>
 			<dict>
 				<key>End</key>
-				<string>The End</string>
+				<string>Soarin is so much fun, and it’s a family favorite. The lines can get long, but we got in early!</string>
 			</dict>
 		</dict>
 	</dict>
