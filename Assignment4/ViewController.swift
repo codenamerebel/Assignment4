@@ -21,21 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        let startScreen = self.storyController.startStory();
-        
-        
-        //  Set up GUI
-        self.setViewStoryMode();
-        
-        
-        //  Configure the gui with opening information
-        PromptLabel.text = startScreen.Prompt;
-        Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
-        Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
-        
+
+
+        self.restartStory();
     }
 
     @IBAction func advanceTheStoryFrom(_sender: UIButton)
@@ -45,7 +33,8 @@ class ViewController: UIViewController {
                 
         if(storyUpdates.Choice1 == nil && storyUpdates.Choice2 == nil)
         {
-            //  Configure the gui with opening information
+            //  Configure the GUI for the end of story
+            //  I present the reset button and the end prompt
             self.PromptLabel.text = storyUpdates.Prompt;
 
             self.setViewResetMode();
@@ -62,7 +51,8 @@ class ViewController: UIViewController {
         
     }
     
-
+    //  This is technically the end of story mode where it presents you with a reset button
+    //  1 button and a label
     func    setViewResetMode()
     {
         self.Choice1Button.isHidden = true;
@@ -70,6 +60,8 @@ class ViewController: UIViewController {
         self.ResetStoryButton.isHidden = false;
     }
     
+    //  This is the normal story mode.
+    //  2 buttons and label
     func    setViewStoryMode()
     {
         self.Choice1Button.isHidden = false;
@@ -77,6 +69,7 @@ class ViewController: UIViewController {
         self.ResetStoryButton.isHidden = true;
     }
     
+    //  This resets the story at the beginning
     @IBAction func    restartStory()
     {
         self.setViewStoryMode();
@@ -85,7 +78,7 @@ class ViewController: UIViewController {
         
         let startScreen = self.storyController.startStory();
         
-        //  Configure the gui with opening information
+        //  Put the story onto the screen
         PromptLabel.text = startScreen.Prompt;
         Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
         Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);

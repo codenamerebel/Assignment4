@@ -15,6 +15,8 @@
  Once you reach the end of the story you will receive a dictionary with 1 key
  Key:  End              End will return the final prompt for the story to tell you the ending
  
+ 
+ As long as you keep the same structure in Adventure.pList you can make the story as long or as short as you like.
  */
  
 
@@ -48,7 +50,8 @@ class   StoryDataHandler
                         
         return(self.currentStory["Prompt"] as! String, storyOptionsArray[0] as! String, storyOptionsArray[1] as! String)
     }
-        
+     
+    //  Advances to the next level of the story
     func advanceStory(choiceKey:String) -> (Prompt: String, Choice1: String?, Choice2: String?)
     {
         //  Let's advance the story and change our options
