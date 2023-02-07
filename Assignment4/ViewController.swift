@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-       // print(storyController.completeStory.description)
         
         let startScreen = self.storyController.startStory();
         
@@ -37,20 +36,13 @@ class ViewController: UIViewController {
         Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
         Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
         
-        
-        print(Choice1Button.title(for: UIControl.State.normal)!);
-        
-        
-        
     }
 
     @IBAction func advanceTheStoryFrom(_sender: UIButton)
     {
         
         let storyUpdates = self.storyController.advanceStory(choiceKey:_sender.title(for: UIControl.State.normal)!)
-        
-        print(storyUpdates)
-        
+                
         if(storyUpdates.Choice1 == nil && storyUpdates.Choice2 == nil)
         {
             //  Configure the gui with opening information
