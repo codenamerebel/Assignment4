@@ -79,9 +79,10 @@ class ViewController: UIViewController {
         let startScreen = self.storyController.startStory();
         
         //  Put the story onto the screen
-        PromptLabel.text = startScreen.Prompt;
-        Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
-        Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
+        self.PromptLabel.text = startScreen.Prompt;
+        self.Choice1Button.setTitle(startScreen.Choice1, for:UIControl.State.normal);
+        self.Choice2Button.setTitle(startScreen.Choice2, for:UIControl.State.normal);
+        self.ResetStoryButton.setTitle("Restart Your Disney Adventure", for: UIControl.State.normal)
         
     }
     
